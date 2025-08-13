@@ -1,0 +1,28 @@
+@use "../utilities/variables" as *;
+
+//formato de botones
+.btn-primary {
+  border-radius: 10px;
+  border: none;
+  background-color: $btn-primary-color;
+  font-weight: 600;
+  width: 10rem;
+  height: 3rem;
+  text-align: center;
+  align-content: center;
+  margin: 0.7rem;
+}
+
+//cajas index
+@mixin bg-box($bg) {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 3%;
+  text-align: center;
+  align-content: center;
+  background-color: $bg;
+  opacity: 0.8;
+  font-family: $variable-font;
+  font-size: 1.5rem;
+  cursor: pointer;
+}

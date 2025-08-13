@@ -26,13 +26,29 @@ footer {
   margin: 0 auto;
 }
 
+.btn-primary, .nav__bar .btn__primary--donacion {
+  border-radius: 10px;
+  border: none;
+  background-color: #e39240;
+  font-weight: 600;
+  width: 10rem;
+  height: 3rem;
+  text-align: center;
+  align-content: center;
+  margin: 0.7rem;
+}
+
 .nav__bar {
   background-color: #2a9d8f;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  height: 4rem;
+  height: 5rem;
   border-radius: 0 0 1rem 1rem;
+  position: fixed;
+  width: 90rem;
+  justify-content: space-around;
+  align-items: center;
+  justify-self: center;
+  z-index: 10;
 }
 .nav__bar .logo__empresa {
   width: 20rem;
@@ -41,7 +57,7 @@ footer {
   object-fit: contain;
 }
 .nav__bar .logo__empresa img {
-  margin-top: 0.7rem;
+  margin-top: 0.3rem;
   width: 60%;
 }
 .nav__bar ul {
@@ -58,6 +74,174 @@ footer {
   color: #f4f4f4;
   letter-spacing: 0.3rem;
   font-weight: 700;
+}
+.nav__bar .btn__primary--donacion {
+  cursor: pointer;
+}
+.nav__bar .btn__primary--donacion a {
+  text-decoration: none;
+  color: #f4f4f4;
+  letter-spacing: 4px;
+}
+
+main {
+  background-color: #2a9d8f;
+}
+
+.img__portada {
+  overflow: hidden;
+  object-fit: contain;
+  margin-top: 5rem;
+  background-color: rgba(50, 50, 50, 0.5);
+  width: 90rem;
+  height: 40rem;
+  /*img:hover {
+    filter: brightness(85%);
+  }*/
+}
+.img__portada img {
+  width: 100%;
+  transition: filter 0.3s ease;
+}
+.img__portada .title__principal {
+  position: absolute;
+  color: #323232;
+  font-size: 1.5rem;
+  font-family: "Gabriela", serif;
+  color: rgb(242, 82, 33);
+  top: 10rem;
+  left: 15rem;
+}
+.img__portada .subtitle__principal {
+  position: absolute;
+  color: #323232;
+  font-size: 1.5rem;
+  font-family: "Gabriela", serif;
+  color: rgb(242, 82, 33);
+  top: 30rem;
+  left: 35rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: -7.5rem;
+}
+.box .card__portada--playas {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 3%;
+  text-align: center;
+  align-content: center;
+  background-color: rgb(226, 57, 57);
+  opacity: 0.8;
+  font-family: "Arimo", sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+.box .card__portada--playas:hover {
+  transform: scale(1.2);
+}
+.box .card__portada--aventuras {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 3%;
+  text-align: center;
+  align-content: center;
+  background-color: rgb(85, 85, 219);
+  opacity: 0.8;
+  font-family: "Arimo", sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+.box .card__portada--aventuras:hover {
+  transform: scale(1.2);
+}
+.box .card__portada--lugares {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 3%;
+  text-align: center;
+  align-content: center;
+  background-color: rgb(118, 33, 118);
+  opacity: 0.8;
+  font-family: "Arimo", sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+.box .card__portada--lugares:hover {
+  transform: scale(1.2);
+}
+
+h3 {
+  color: #f4f4f4;
+}
+
+.nosotros {
+  display: grid;
+  grid-template-areas: "card__amigos text__amigos";
+}
+
+.card__amigos {
+  grid-area: card__amigos;
+  margin-top: 3rem;
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+  margin-left: 2rem;
+  border-radius: 1rem;
+  animation: descanso 20s infinite;
+}
+
+@keyframes descanso {
+  0% {
+    background-image: url(/asset/images/index/amigos1.jpeg);
+    width: 40rem;
+    height: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  25% {
+    background-image: url(/asset/images/index/amigos2.jpg);
+    width: 40rem;
+    height: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  50% {
+    background-image: url(/asset/images/index/amigos1.jpeg);
+    width: 40rem;
+    height: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  75% {
+    background-image: url(/asset/images/index/amigos3.jpg);
+    width: 40rem;
+    height: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  100% {
+    background-image: url(/asset/images/index/amigos4.jpg);
+    width: 40rem;
+    height: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.text__amigos {
+  grid-area: text__amigos;
+  margin-top: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

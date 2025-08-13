@@ -1,0 +1,130 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin-extend" as *;
+main {
+  background-color: $bg-nav-footer;
+}
+.img__portada {
+  overflow: hidden;
+  object-fit: contain;
+  margin-top: 5rem;
+  background-color: rgba($color: #323232, $alpha: 0.5);
+  width: 90rem;
+  height: 40rem;
+
+  img {
+    width: 100%;
+    transition: filter 0.3s ease;
+  }
+  /*img:hover {
+    filter: brightness(85%);
+  }*/
+  .title__principal {
+    position: absolute;
+    color: $main-text;
+    font-size: 1.5rem;
+    font-family: $optional-font;
+    color: $title-text;
+    top: 10rem;
+    left: 15rem;
+  }
+  .subtitle__principal {
+    position: absolute;
+    color: $main-text;
+    font-size: 1.5rem;
+    font-family: $optional-font;
+    color: $title-text;
+    top: 30rem;
+    left: 35rem;
+  }
+}
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: -7.5rem;
+  .card__portada--playas {
+    @include bg-box(rgb(226, 57, 57));
+    transition: transform 0.5s ease-in-out;
+  }
+  .card__portada--playas:hover {
+    transform: scale(1.2);
+  }
+  .card__portada--aventuras {
+    @include bg-box(rgb(85, 85, 219));
+    transition: transform 0.5s ease-in-out;
+  }
+  .card__portada--aventuras:hover {
+    transform: scale(1.2);
+  }
+  .card__portada--lugares {
+    @include bg-box(rgb(118, 33, 118));
+    transition: transform 0.5s ease-in-out;
+  }
+  .card__portada--lugares:hover {
+    transform: scale(1.2);
+  }
+}
+h3 {
+  color: $nav-text;
+}
+.nosotros {
+  display: grid;
+  grid-template-areas: "card__amigos text__amigos";
+}
+.card__amigos {
+  grid-area: card__amigos;
+  margin-top: 3rem;
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+  margin-left: 2rem;
+  border-radius: 1rem;
+  animation: descanso 20s infinite;
+}
+
+@keyframes descanso {
+  0% {
+    background-image: url(/asset/images/index/amigos1.jpeg);
+    width: 40rem;
+    height: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  25% {
+    background-image: url(/asset/images/index/amigos2.jpg);
+    width: 40rem;
+    height: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  50% {
+    background-image: url(/asset/images/index/amigos1.jpeg);
+    width: 40rem;
+    height: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  75% {
+    background-image: url(/asset/images/index/amigos3.jpg);
+    width: 40rem;
+    height: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  100% {
+    background-image: url(/asset/images/index/amigos4.jpg);
+    width: 40rem;
+    height: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.text__amigos {
+  grid-area: text__amigos;
+  margin-top: 3rem;
+}

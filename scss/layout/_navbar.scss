@@ -1,19 +1,25 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixin-extend" as *;
 
 .nav__bar {
   background-color: $bg-nav-footer;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  height: 4rem;
+  height: 5rem;
   border-radius: 0 0 1rem 1rem;
+  position: fixed;
+  width: 90rem;
+  justify-content: space-around;
+  align-items: center;
+  justify-self: center;
+  z-index: 10;
+
   .logo__empresa {
     width: 20rem;
     height: 5rem;
     overflow: hidden;
     object-fit: contain;
     img {
-      margin-top: 0.7rem;
+      margin-top: 0.3rem;
       width: 60%;
     }
   }
@@ -31,6 +37,15 @@
         letter-spacing: 0.3rem;
         font-weight: 700;
       }
+    }
+  }
+  .btn__primary--donacion {
+    @extend .btn-primary;
+    cursor: pointer;
+    a {
+      text-decoration: none;
+      color: $nav-text;
+      letter-spacing: 4px;
     }
   }
 }
