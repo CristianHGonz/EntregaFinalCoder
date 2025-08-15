@@ -2,10 +2,9 @@
 @use "../utilities/mixin-extend" as *;
 
 .nav__bar {
-  background-color: $bg-nav-footer;
+  background: linear-gradient(90deg, #005b80, #00b8c9);
   display: flex;
-  height: 5rem;
-  border-radius: 0 0 1rem 1rem;
+  height: 7rem;
   position: fixed;
   width: 90rem;
   justify-content: space-around;
@@ -14,13 +13,12 @@
   z-index: 10;
 
   .logo__empresa {
-    width: 20rem;
-    height: 5rem;
+    width: 25rem;
     overflow: hidden;
     object-fit: contain;
     img {
       margin-top: 0.3rem;
-      width: 60%;
+      width: 70%;
     }
   }
   ul {
@@ -32,10 +30,11 @@
       a {
         padding: 1rem;
         text-decoration: none;
-        font-family: $primary-font;
+        font-family: $variable-font;
         color: $nav-text;
         letter-spacing: 0.3rem;
-        font-weight: 700;
+        font-weight: bolder;
+        font-size: 1rem;
       }
     }
   }
@@ -46,6 +45,7 @@
       text-decoration: none;
       color: $nav-text;
       letter-spacing: 4px;
+      font-family: $variable-font;
     }
   }
 }

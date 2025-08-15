@@ -12,6 +12,11 @@
   align-content: center;
   margin: 0.7rem;
 }
+//footer texto
+@mixin footer-text($margin) {
+  font-family: $primary-font;
+  margin: $margin;
+}
 
 //cajas index
 @mixin bg-box($bg) {
