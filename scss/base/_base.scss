@@ -6,18 +6,13 @@
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100dvh;
-}
 main {
-  margin-bottom: auto !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.container,
-.nav__bar,
-footer {
+.container {
   width: 90rem;
   margin: 0 auto;
 }

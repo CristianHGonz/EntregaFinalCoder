@@ -1,6 +1,6 @@
 @use "../utilities/variables" as *;
 
-//formato de botones
+/*//formato de botones
 .btn-primary {
   border-radius: 10px;
   border: none;
@@ -11,6 +11,34 @@
   text-align: center;
   align-content: center;
   margin: 0.7rem;
+}*/
+//sombras
+.shadow {
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5), -5px 0 10px rgba(0, 0, 0, 0.5);
+}
+//box index
+.box {
+  display: flex;
+  justify-content: center;
+  margin-top: 24rem;
+}
+//playas
+.playas {
+  margin: 1.5rem 1rem;
+  font-size: 1rem;
+  font-family: $variable-font;
+  color: $secondary-font;
+
+  a {
+    text-decoration: none;
+    //background-color: rgb(233, 233, 33);
+    background: linear-gradient(
+      90deg,
+      rgba(87, 199, 133, 1) 0%,
+      rgba(237, 221, 83, 1) 100%
+    );
+    color: $main-text;
+  }
 }
 //footer texto
 @mixin footer-text($margin) {

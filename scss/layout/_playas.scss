@@ -1,0 +1,13 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin-extend" as *;
+
+.title__playas {
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: $secondary-font;
+  font-size: 2rem;
+}
+.playa--list {
+  @extend .playas;
+}

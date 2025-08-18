@@ -1,6 +1,8 @@
 @use "../scss/base/base";
+@use "../scss/utilities/mixin-extend";
 @use "../scss/layout/navbar";
 @use "../scss/layout/index";
-@use "../scss/utilities/mixin-extend";
+@use "../scss/layout/playas";
 @use "../scss/layout/slide-bar";
 @use "../scss/layout/footer";
+@use "../scss/utilities/mediasquery";

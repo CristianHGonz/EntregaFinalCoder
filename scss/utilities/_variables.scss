@@ -5,10 +5,12 @@ $optional-font: "Gabriela", serif;
 $variable-font: "Arimo", sans-serif;
 
 //bg
-$bg-nav-footer: #2ec4b6;
+$bg-nav-footer-alternate: #2ec4b6;
+$bg-nav-footer: linear-gradient(90deg, #005b80, #00b8c9);
 
 //texto
 $nav-text: #f4f4f4;
+$footer-text: #fff;
 $main-text: #323232;
 $title-text: rgb(242, 82, 33);
 
