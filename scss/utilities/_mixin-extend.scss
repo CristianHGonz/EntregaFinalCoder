@@ -40,6 +40,23 @@
     color: $main-text;
   }
 }
+//textos de playas
+.text-playas {
+  width: 40rem;
+  height: 30rem;
+  font-family: $primary-font;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+//playas imagenes
+.img-playas {
+  width: 40rem;
+  height: 30rem;
+  border-radius: 1rem;
+  @extend .shadow;
+  margin: 4rem 0;
+}
+
 //footer texto
 @mixin footer-text($margin) {
   font-family: $primary-font;
@@ -58,4 +75,11 @@
   font-family: $variable-font;
   font-size: 1.5rem;
   cursor: pointer;
+}
+//titulos de playas
+@mixin aligh($aligh) {
+  text-align: $aligh;
+  font-family: $primary-font;
+  margin-top: 2rem;
+  font-size: 1.5rem;
 }

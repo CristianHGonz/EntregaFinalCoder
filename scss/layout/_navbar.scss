@@ -7,28 +7,31 @@ header {
 .nav__bar {
   background: linear-gradient(90deg, #005b80, #00b8c9);
   display: flex;
-  height: 6rem;
+  height: 6.5rem;
   position: fixed;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   justify-self: center;
+
   z-index: 10;
   top: 0;
   @extend .shadow;
 
   .logo__empresa {
-    width: 20rem;
+    width: 15rem;
     overflow: hidden;
     object-fit: contain;
     img {
       margin-top: 0.3rem;
+      margin-left: 2rem;
       width: 70%;
     }
   }
   ul {
     display: flex;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.95rem;
+    margin-right: 4rem;
 
     li {
       list-style: none;
@@ -39,7 +42,7 @@ header {
         color: $nav-text;
         letter-spacing: 0.3rem;
         font-weight: bolder;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         transition: 0.5s;
       }
     }
