@@ -151,15 +151,11 @@
   }
 
   .playa__img {
-    width: 40rem;
-    height: 30rem;
-    border-radius: 1rem;
-    @extend .shadow;
-    margin: 4rem 0;
-    transition: transform 0.5s ease-in-out;
+    @extend .imagenes;
   }
   .playa__img:hover {
     transform: scale(1.2);
+    filter: saturate(200%);
   }
 }
 .top-btn {

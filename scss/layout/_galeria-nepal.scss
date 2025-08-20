@@ -1,0 +1,67 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin-extend" as *;
+
+.title__nepal {
+  margin: 8rem 0 2rem 0;
+  text-align: center;
+  font-size: 3rem;
+  font-family: $secondary-font;
+  color: $main-text;
+}
+.text__nepal {
+  text-align: justify;
+  font-size: 1.2rem;
+  font-family: $primary-font;
+  margin-bottom: 2rem;
+}
+.galeria-nepal {
+  display: grid;
+  grid-template-areas:
+    "nepal01 nepal02"
+    "nepal03 nepal02"
+    "nepal03 nepal04"
+    "nepal05 nepal04"
+    "nepal05 nepal06";
+  border-radius: 1rem;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  margin-bottom: 3rem;
+  .nepal01 {
+    grid-area: nepal01;
+    .nepal {
+      @extend .galeria-nepal;
+    }
+  }
+  .nepal02 {
+    grid-area: nepal02;
+    .nepal {
+      @extend .galeria-nepal;
+    }
+  }
+  .nepal03 {
+    grid-area: nepal03;
+    .nepal {
+      @extend .galeria-nepal;
+    }
+  }
+  .nepal04 {
+    grid-area: nepal04;
+    .nepal {
+      @extend .galeria-nepal;
+    }
+  }
+  .nepal05 {
+    grid-area: nepal05;
+    .nepal {
+      @extend .galeria-nepal;
+    }
+  }
+  .nepal06 {
+    grid-area: nepal06;
+    .nepal {
+      @extend .galeria-nepal;
+    }
+  }
+}
