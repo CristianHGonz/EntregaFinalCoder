@@ -161,11 +161,22 @@
 .top-btn {
   position: sticky;
   bottom: 1rem;
-  left: 110rem;
+  left: 112rem;
 }
 .top {
   transition: transform 0.5s ease-in-out;
 }
 .top:hover {
+  transform: scale(1.3);
+}
+.back-btn {
+  position: sticky;
+  bottom: 1rem;
+  left: 108rem;
+}
+.back {
+  transition: transform 0.5s ease-in-out;
+}
+.back:hover {
   transform: scale(1.3);
 }
