@@ -1,22 +1,26 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixin-extend" as *;
 
-.title__nepal {
-  margin: 10rem 0 2rem 0;
+.title__galeria {
   text-align: center;
-  font-size: 3rem;
-  font-family: $secondary-font;
+  margin-bottom: 2rem;
+  font-family: $variable-font;
+  font-size: 2.25rem;
+  margin-top: 8rem;
   color: $main-text;
 }
-.text__nepal {
+.text__galeria {
   text-align: justify;
-  font-size: 1.2rem;
-  font-family: $primary-font;
-  margin-bottom: 2rem;
+  margin: 2rem;
+  font-family: $optional-font;
+  font-size: 1rem;
+  font-weight: 400;
+  color: $main-text;
 }
+
 .galeria {
   display: grid;
-  width: 100%;
+  width: 75%;
   grid-template-areas:
     "box__img1 box__img2"
     "box__img3 box__img4"
@@ -25,11 +29,12 @@
   border-radius: 1rem;
   gap: 1rem;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4, 0.5fr);
+  grid-auto-rows: auto;
   justify-content: center;
-  //  background: linear-gradient(90deg, #00b8c9, #00b1c0);
+  text-align: center;
+  background: linear-gradient(90deg, #00b8c9, #00b1c0);
   padding: 1rem;
-  margin-bottom: 3rem;
+  margin: 0 auto 3rem auto;
 
   .box__img1 {
     grid-area: box__img1;

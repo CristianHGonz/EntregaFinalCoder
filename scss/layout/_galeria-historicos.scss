@@ -1,0 +1,95 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin-extend" as *;
+
+.title__historicos {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: $primary-font;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  font-weight: 400;
+  color: $main-text;
+}
+.subtitle__historicos {
+  text-align: center;
+  margin-top: 8.5rem;
+  font-family: $optional-font;
+  font-size: 3rem;
+}
+
+.historicos__container {
+  display: grid;
+  grid-template-areas:
+    "historicos01 hisotoricos2"
+    "historicos03 historicos04"
+    "historicos05 historicos06"
+    "historicos07 historicos08"
+    "historicos09 historicos10";
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  margin-top: 1rem;
+  transition: transform 0.5s ease-in-out;
+
+  .historicos01 {
+    grid-area: historicos01;
+    background-image: url(/asset/images/historicos/01.jpg);
+    @extend .aventuras;
+  }
+  .historicos02 {
+    grid-area: historicos02;
+    background-image: url(/asset/images/historicos/02.png);
+    @extend .aventuras;
+  }
+  .historicos03 {
+    grid-area: historicos03;
+    background-image: url(/asset/images/historicos/03.jpeg);
+    @extend .aventuras;
+  }
+  .historicos04 {
+    grid-area: historicos04;
+    background-image: url(/asset/images/historicos/04.jpeg);
+    @extend .aventuras;
+  }
+  .historicos05 {
+    grid-area: historicos05;
+    background-image: url(/asset/images/historicos/05.jpg);
+    @extend .aventuras;
+  }
+  .historicos06 {
+    grid-area: historicos06;
+    background-image: url(/asset/images/historicos/06.jpg);
+    @extend .aventuras;
+  }
+  .historicos07 {
+    background-image: url(/asset/images/historicos/07.jpg);
+    @extend .aventuras;
+  }
+  .historicos08 {
+    grid-area: historicos08;
+    background-image: url(/asset/images/historicos/08.jpg);
+    @extend .aventuras;
+  }
+  .historicos09 {
+    grid-area: historicos09;
+    background-image: url(/asset/images/historicos/09.png);
+    @extend .aventuras;
+  }
+  .historicos10 {
+    grid-area: historicos10;
+    background-image: url(/asset/images/historicos/10.jpg);
+    @extend .aventuras;
+  }
+}
+.historicos01:hover,
+.historicos02:hover,
+.historicos03:hover,
+.historicos04:hover,
+.historicos05:hover,
+.historicos06:hover,
+.historicos07:hover,
+.historicos08:hover,
+.historicos09:hover,
+.historicos10:hover {
+  filter: saturate(200%);
+}

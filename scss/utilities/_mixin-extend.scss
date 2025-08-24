@@ -14,7 +14,7 @@
 }*/
 //sombras
 .shadow {
-  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5), -5px 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 0 20px rgba(0, 0, 0, 0.5), -5px 0 20px rgba(0, 0, 0, 0.5);
 }
 //box index
 .box {
@@ -91,6 +91,20 @@
   width: 100%;
   height: 100%;
   border-radius: 1rem;
+}
+//nosotros perfiles
+.perfiles {
+  .img__nosotros {
+    border-radius: 1rem;
+    width: 20rem;
+    float: left;
+    margin: 0 1rem;
+  }
+  .text_nosotros {
+    text-align: justify;
+    font-family: $primary-font;
+    color: $main-text;
+  }
 }
 
 //footer texto

@@ -2,9 +2,12 @@
 @use "../scss/utilities/mixin-extend";
 @use "../scss/layout/navbar";
 @use "../scss/layout/index";
-@use "../scss/layout/playas";
+@use "../scss/layout/botones";
 @use "../scss/layout/aventuras";
-@use "../scss/layout/galeria-nepal";
+@use "../scss/layout/nosotros";
+@use "../scss/layout/galeria-aventuras";
+@use "../scss/layout/galeria-historicos";
+@use "../scss/layout/galeria-playas.scss";
 @use "../scss/layout/slide-bar";
 @use "../scss/layout/footer";
 @use "../scss/utilities/mediasquery";

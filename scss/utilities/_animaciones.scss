@@ -49,3 +49,11 @@
     background-size: 100% 2px;
   }
 }
+@keyframes titulo {
+  from {
+    transform: translatex(15%);
+  }
+  to {
+    transform: translate(-25%);
+  }
+}
