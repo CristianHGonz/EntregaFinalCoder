@@ -41,7 +41,7 @@ main {
   }
   .portada__img--01 {
     grid-area: portada__img--01;
-    background-image: url("/asset/images/index/img-left.jpg");
+    background-image: url("../asset/images/index/img-left.jpg");
     background-size: cover;
     background-position: left;
     @extend .shadow;
@@ -62,7 +62,7 @@ main {
   }
   .portada__img--02 {
     grid-area: portada__img--02;
-    background-image: url("/asset/images/index/img-center.jpg");
+    background-image: url("../asset/images/index/img-center.jpg");
     background-size: cover;
     background-position: center;
     @extend .shadow;
@@ -83,7 +83,7 @@ main {
   }
   .portada__img--03 {
     grid-area: portada__img--03;
-    background-image: url("/asset/images/index/img-right.jpeg");
+    background-image: url("../asset/images/index/img-right.jpeg");
     background-size: cover;
     background-position: right;
     @extend .shadow;

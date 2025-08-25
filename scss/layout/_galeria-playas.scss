@@ -20,7 +20,7 @@
 .playas__container {
   display: grid;
   grid-template-areas:
-    "playas01 playas2"
+    "playas01 playas02"
     "playas03 playas04"
     "playas05 playas06"
     "playas07 playas08"
@@ -33,7 +33,7 @@
 
   .playas01 {
     grid-area: playas01;
-    background-image: url(/asset/images/playas/playa1.jpg);
+    background-image: url(../asset/images/playas/playa1.jpg);
     @extend .aventuras;
     .title__card,
     .subtitle__card {
@@ -42,7 +42,7 @@
   }
   .playas02 {
     grid-area: playas02;
-    background-image: url(/asset/images/playas/playa2.jpg);
+    background-image: url(../asset/images/playas/playa2.jpg);
     @extend .aventuras;
     .title__card,
     .subtitle__card {
@@ -51,7 +51,7 @@
   }
   .playas03 {
     grid-area: playas03;
-    background-image: url(/asset/images/playas/playa3.jpg);
+    background-image: url(../asset/images/playas/playa3.jpg);
     @extend .aventuras;
     .title__card,
     .subtitle__card {
@@ -60,7 +60,7 @@
   }
   .playas04 {
     grid-area: playas04;
-    background-image: url(/asset/images/playas/playa4.png);
+    background-image: url(../asset/images/playas/playa4.png);
     @extend .aventuras;
     .title__card,
     .subtitle__card {
@@ -69,7 +69,7 @@
   }
   .playas05 {
     grid-area: playas05;
-    background-image: url(/asset/images/playas/playa5.jpg);
+    background-image: url(../asset/images/playas/playa5.jpg);
     @extend .aventuras;
     .title__card,
     .subtitle__card {
@@ -78,7 +78,7 @@
   }
   .playas06 {
     grid-area: playas06;
-    background-image: url(/asset/images/playas/playa6.jpg);
+    background-image: url(../asset/images/playas/playa6.jpg);
     @extend .aventuras;
     .title__card,
     .subtitle__card {
@@ -86,7 +86,7 @@
     }
   }
   .playas07 {
-    background-image: url(/asset/images/playas/playa7.jpg);
+    background-image: url(../asset/images/playas/playa7.jpg);
     @extend .aventuras;
     .title__card,
     .subtitle__card {
@@ -95,7 +95,7 @@
   }
   .playas08 {
     grid-area: playas08;
-    background-image: url(/asset/images/playas/playa8.jpg);
+    background-image: url(../asset/images/playas/playa8.jpg);
     @extend .aventuras;
     .title__card,
     .subtitle__card {
@@ -104,12 +104,12 @@
   }
   .playas09 {
     grid-area: playas09;
-    background-image: url(/asset/images/playas/playa9.jpg);
+    background-image: url(../asset/images/playas/playa9.jpg);
     @extend .aventuras;
   }
   .playas10 {
     grid-area: playas10;
-    background-image: url(/asset/images/playas/playa10.jpg);
+    background-image: url(../asset/images/playas/playa10.jpg);
     @extend .aventuras;
   }
 }
